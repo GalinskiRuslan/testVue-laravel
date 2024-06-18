@@ -5,10 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Shop extends Model
+class Transaction extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'name'
+        "data_time",
+        "sum",
+        "doc", "shop_id"
     ];
 }

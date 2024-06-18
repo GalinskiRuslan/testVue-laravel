@@ -17,7 +17,7 @@ class ShopFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            "name" => $this->faker->slug(4),
         ];
     }
 }
